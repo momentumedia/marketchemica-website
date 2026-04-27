@@ -198,9 +198,7 @@ p { max-width: var(--max-w-text); }
   position: sticky;
   top: 0;
   z-index: var(--z-nav);
-  background: color-mix(in srgb, var(--ink) 88%, transparent);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  background: var(--ink);
   border-bottom: var(--bw-hair) solid var(--rule-soft);
 }
 

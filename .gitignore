@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Reference materials (not deployed) — kept locally for content reference only
+MCHA General Presentation.pdf
+MCHA One-Pager.jpg.jpeg
+market chemica logo.jpg
+Alex Comanita.jpeg
+Bogdan Comanita.jpeg
+SKILL.md
+marketingskills-main.zip
+marketingskills-main/
+
+# Logs / dev runtime
+*.log
+.cache/

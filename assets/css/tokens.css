@@ -1,0 +1,108 @@
+/* ============================================================
+   MARKET CHEMICA ASSOCIATES — DESIGN TOKENS
+   Editorial Dealmaker · slate × molten orange × olive · hex motif
+   ============================================================ */
+
+:root {
+  /* ----- Color ------------------------------------------------ */
+  --ink:          #16201f;   /* deep slate w/ green undertone */
+  --ink-soft:     #1f2c2a;
+  --ink-deeper:   #0d1413;
+  --paper:        #efe7d6;   /* warm cream — inverted sections */
+  --paper-soft:   #f6f0e2;
+  --bone:         #d8cdb6;   /* deeper paper accent */
+  --orange:       #ed7e1a;   /* logo molten orange */
+  --orange-hot:   #f9a13a;   /* hover/active brighten */
+  --orange-deep:  #b85a08;
+  --olive:        #b8b04a;   /* secondary value-chain accent */
+  --olive-deep:   #6f6a2e;
+  --olive-soft:   #d6cf7a;
+  --rule:         #5a6361;   /* on-ink dividers */
+  --rule-soft:    #2a3736;
+  --rule-paper:   #b8a982;   /* on-paper dividers */
+  --text-mute:    #9aa3a1;   /* on-ink secondary text */
+  --text-mute-paper: #6f6753;
+
+  /* Semantic surface mappings */
+  --bg:           var(--ink);
+  --bg-deeper:    var(--ink-deeper);
+  --fg:           var(--paper);
+  --fg-mute:      var(--text-mute);
+  --accent:       var(--orange);
+  --accent-2:     var(--olive);
+  --line:         var(--rule);
+
+  /* ----- Typography ------------------------------------------- */
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  --font-sans:    "Hanken Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  /* Fluid type scale — clamp(min, preferred, max) */
+  --fs-xs:   0.75rem;                                    /* 12px */
+  --fs-sm:   0.875rem;                                   /* 14px */
+  --fs-base: 1rem;                                       /* 16px */
+  --fs-md:   1.125rem;                                   /* 18px */
+  --fs-lg:   clamp(1.25rem, 0.9rem + 1.4vw, 1.625rem);   /* 20–26 */
+  --fs-xl:   clamp(1.6rem, 1rem + 2.5vw, 2.5rem);        /* 26–40 */
+  --fs-2xl:  clamp(2.2rem, 1rem + 5vw, 4.25rem);         /* 35–68 */
+  --fs-3xl:  clamp(3rem, 1rem + 9vw, 7rem);              /* 48–112 */
+  --fs-4xl:  clamp(4rem, 1rem + 14vw, 11rem);            /* 64–176 */
+  --fs-hero: clamp(3.5rem, 1rem + 8vw, 7rem);            /* 56–112 — hero only */
+
+  --lh-tight:    0.92;
+  --lh-display:  1.02;
+  --lh-snug:     1.18;
+  --lh-body:     1.55;
+  --lh-loose:    1.7;
+
+  --tr-tight:   -0.04em;
+  --tr-snug:    -0.02em;
+  --tr-mono:     0.16em;
+  --tr-mono-lg:  0.22em;
+
+  /* ----- Spacing (8pt scale) ---------------------------------- */
+  --s-1:  0.25rem;
+  --s-2:  0.5rem;
+  --s-3:  0.75rem;
+  --s-4:  1rem;
+  --s-5:  1.5rem;
+  --s-6:  2rem;
+  --s-7:  3rem;
+  --s-8:  4rem;
+  --s-9:  6rem;
+  --s-10: 8rem;
+  --s-11: 12rem;
+
+  /* Section vertical padding (fluid) */
+  --pad-section: clamp(4rem, 8vw, 9rem);
+  --pad-section-tight: clamp(3rem, 5vw, 6rem);
+
+  /* Page gutter — outer side margin */
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+
+  --max-w:        1440px;
+  --max-w-text:   72ch;
+  --max-w-narrow: 56ch;
+
+  /* ----- Borders / radii / shadows ---------------------------- */
+  --bw-hair: 1px;
+  --bw-rule: 2px;
+  --bw-thick: 3px;
+
+  --radius-sm: 2px;
+  --radius:    4px;
+
+  /* ----- Motion ----------------------------------------------- */
+  --ease-out: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur:      320ms;
+  --dur-slow: 600ms;
+  --dur-x:    1100ms;
+
+  /* ----- Z layers --------------------------------------------- */
+  --z-bg:   -1;
+  --z-base:  1;
+  --z-nav:   50;
+  --z-modal: 100;
+}
